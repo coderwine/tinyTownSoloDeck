@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+
+:root {
+    --glass: rgb(5, 202, 202);
+    --wheat: goldenrod;
+    --brick: rgb(126, 39, 4);
+    --wood: rgb(107, 59, 31);
+    --stone: rgb(155, 148, 148);
+    
+/* 
+glass = cyan / wheat = goldenrod / brick = burnt orange / wood = brown / stone = grey
+*/
+
+}
+
+#container {
+    height: 85vh;
+}
+
+.textDisplay {
+    color: white;
+    /* font-family: 'Crimson Text', serif; */
+}
+
+#glass {
+    background-color: var(--glass);
+}
+#wheat {
+    background-color: var(--wheat);
+    /* font-family: 'Crimson Text', serif; */
+}
+#brick {
+    background-color: var(--brick);
+}
+#wood {
+    background-color: var(--wood);
+}
+#stone {
+    background-color: var(--stone);
+}

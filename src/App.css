@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  background-image: radial-gradient(
+    rgba(255,255,255,.1), 
+    rgba(255,255,255,.4),
+    rgba(255,255,255,.6), 
+    rgba(255,255,255,1)
+  ), url('./assets/backgroundImage.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+  /* margin-top: -40px; */
+  padding-top: 1em;
+}
