@@ -8,7 +8,5 @@
   ), url('./assets/backgroundImage.jpg');
   background-size: cover;
   background-position: center;
-  height: 110vh;
-  /* margin-top: -40px; */
-  padding-top: 1em;
+  height: 100vh;
 }

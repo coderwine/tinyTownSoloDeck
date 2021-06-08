@@ -2,14 +2,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import { SettingsInputSvideo } from '@material-ui/icons';
+// import { SettingsInputSvideo } from '@material-ui/icons';
 
 const useStyles = makeStyles({
     root: {
         minWidth: 200,
         maxWidth: 300,
-        maxHeight: 200,
-        margin: '2.5em auto 1.25em auto',
+        maxHeight: 125,
+        margin: '.75rem auto 0 auto',
     },
     bullet: {
         display: 'inline-block',
@@ -43,28 +43,49 @@ const Spread = props => {
 
     return(
         <>
+            <Card className={classes.root}>
+                <CardContent className='textDisplay' id="wood" onClick={testFunc}>
+                    <Typography className={classes.title} gutterBottom>
+                    Wood
+                    </Typography>
+                </CardContent>
+            </Card>
+            <Card className={classes.root}>
+                <CardContent className='textDisplay' id="stone" onClick={testFunc}>
+                    <Typography className={classes.title} gutterBottom>
+                    Stone
+                    </Typography>
+                </CardContent>
+            </Card>
+            <Card className={classes.root}>
+                <CardContent className='textDisplay' id="brick" onClick={testFunc}>
+                    <Typography className={classes.title} gutterBottom>
+                    Brick
+                    </Typography>
+                </CardContent>
+            </Card>
         {
-            props.deck.spread.map((resource, index) => {
-                let type;
+            // props.deck.spread.map((resource, index) => {
+            //     let type;
                 
-                for(let i=0; i < resource.length; i++){
-                    if(i === 0) {
-                        type = resource[i].toUpperCase();
-                    } else {
-                        type += resource[i];
-                    }
-                }
+            //     for(let i=0; i < resource.length; i++){
+            //         if(i === 0) {
+            //             type = resource[i].toUpperCase();
+            //         } else {
+            //             type += resource[i];
+            //         }
+            //     }
 
-                return (
-                    <Card key={index} className={classes.root}>
-                        <CardContent key={index} id={resource} className='textDisplay' onClick={testFunc}>
-                            <Typography className={classes.title} gutterBottom>
-                            {type}
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                ) 
-            })
+            //     return (
+            //         <Card key={index} className={classes.root}>
+            //             <CardContent key={index} id={resource} className='textDisplay' onClick={testFunc}>
+            //                 <Typography className={classes.title} gutterBottom>
+            //                 {type}
+            //                 </Typography>
+            //             </CardContent>
+            //         </Card>
+            //     ) 
+            // })
         
         }
         </>
