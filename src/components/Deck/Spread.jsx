@@ -29,7 +29,9 @@ const useStyles = makeStyles({
 });
 
 const Spread = props => {
-    console.log(props);
+    console.log(props.app.spread);
+    const spread = props.app.spread;
+    console.log(spread.spread.length)
     const classes = useStyles();
 
     const testFunc = (res) => {
@@ -41,52 +43,62 @@ const Spread = props => {
         props.deck.setSpread([]);
     }
 
+    const displaySpread = () => {
+        if(spread.spread.length === 0){
+            return <h2>Deal Spread</h2>
+        } else {
+            // console.log('Else Hit');
+
+            return spread.spread.map((resource, index) => {
+                let type;
+                
+                for(let i=0; i < resource.length; i++){
+                    if(i === 0) {
+                        type = resource[i].toUpperCase();
+                    } else {
+                        type += resource[i];
+                    }
+                }
+
+                return (
+                    <Card key={index} className={classes.root}>
+                        <CardContent key={index} id={resource} className='textDisplay' onClick={testFunc}>
+                            <Typography className={classes.title} gutterBottom>
+                            {type}
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                ) 
+            })
+
+        }  
+    }
+
     return(
         <>
-            <Card className={classes.root}>
-                <CardContent className='textDisplay' id="wood" onClick={testFunc}>
-                    <Typography className={classes.title} gutterBottom>
-                    Wood
-                    </Typography>
-                </CardContent>
-            </Card>
-            <Card className={classes.root}>
-                <CardContent className='textDisplay' id="stone" onClick={testFunc}>
-                    <Typography className={classes.title} gutterBottom>
-                    Stone
-                    </Typography>
-                </CardContent>
-            </Card>
-            <Card className={classes.root}>
-                <CardContent className='textDisplay' id="brick" onClick={testFunc}>
-                    <Typography className={classes.title} gutterBottom>
-                    Brick
-                    </Typography>
-                </CardContent>
-            </Card>
         {
-            // props.deck.spread.map((resource, index) => {
-            //     let type;
-                
-            //     for(let i=0; i < resource.length; i++){
-            //         if(i === 0) {
-            //             type = resource[i].toUpperCase();
-            //         } else {
-            //             type += resource[i];
-            //         }
-            //     }
+                // spread.spread.map((resource, index) => {
+                //     let type;
+                    
+                //     for(let i=0; i < resource.length; i++){
+                //         if(i === 0) {
+                //             type = resource[i].toUpperCase();
+                //         } else {
+                //             type += resource[i];
+                //         }
+                //     }
 
-            //     return (
-            //         <Card key={index} className={classes.root}>
-            //             <CardContent key={index} id={resource} className='textDisplay' onClick={testFunc}>
-            //                 <Typography className={classes.title} gutterBottom>
-            //                 {type}
-            //                 </Typography>
-            //             </CardContent>
-            //         </Card>
-            //     ) 
-            // })
-        
+                //     return (
+                //         <Card key={index} className={classes.root}>
+                //             <CardContent key={index} id={resource} className='textDisplay' onClick={testFunc}>
+                //                 <Typography className={classes.title} gutterBottom>
+                //                 {type}
+                //                 </Typography>
+                //             </CardContent>
+                //         </Card>
+                //     ) 
+                // })
+            displaySpread()
         }
         </>
     )

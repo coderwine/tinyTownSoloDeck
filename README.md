@@ -1,10 +1,11 @@
 **TODO**
-- set deck arrays
 - track selected resources
 - track turns
 - Last selection display -> state created / create functions to handle
-- Build Reset function
 - Build About modal -> child of Navbar.
+
+**Completed**
+- 6/12: Setup default decks, shuffling and spread display.  Successfully cycling through the deck and reshuffling for a reset deck.
 
 **The Purpose of this Project**
 This is meant to be a practice in React and styling through Material-UI.

@@ -18,16 +18,42 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function ShuffleButton(props) {
-    console.log(props.app);
+    console.log(props);
     const classes = useStyles();
+
+    const thisDeal = () => {
+        let deckPath= props.app.deckState;
+        let currentDeck = deckPath.deck;
+        console.log('This Current:', currentDeck.length)
+        let shuffledDeck = [];
+
+        if(currentDeck.length === 0) {
+            deckPath.setDeck(props.app.baseDeck);
+            props.app.spread.setSpread([]);
+        } else {
+            for(let i =0; i<3; i++) {
+                let pos = Math.floor(Math.random() * currentDeck.length);
+                shuffledDeck.push(currentDeck[pos]);
+                currentDeck.splice(pos, 1);
+            }
+            deckPath.setDeck(currentDeck);
+            props.app.spread.setSpread(shuffledDeck)
+        }
+
+        console.log('DECK LENGTH:', currentDeck.length)
+    }
 
     const btnDisplay = () => {
         return(
             props.app.discard === 15 ? 
-            <Button className={classes.root} size="large"
-                variant="contained">Shuffle</Button> : 
-            <Button className={classes.root} size="large"
-                variant="contained"> Spread</Button>
+            <Button className={classes.root} 
+                size="large"
+                variant="contained"
+                onClick={thisDeal} >Shuffle</Button> : 
+            <Button className={classes.root} 
+                size="large"
+                variant="contained"
+                onClick={thisDeal} > Spread</Button>
         )
     }
 

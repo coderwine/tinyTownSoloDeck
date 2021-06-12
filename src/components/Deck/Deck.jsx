@@ -3,8 +3,38 @@ import '../../styles/deck.css';
 import Spread from './Spread';
 
 const Deck = props => {
-    // console.log(props)
-    // const [spread, setSpread] = useState(deck);
+    console.log(props)
+    let appProps = props.app;
+    // console.log('appProps: ', appProps)
+    // const [spread, setSpread] = useState([]);
+
+    // let baseDeck = [
+    //     'wood','wood','wood',
+    //     'brick','brick','brick',
+    //     'stone','stone','stone',
+    //     'glass','glass','glass',
+    //     'wheat','wheat','wheat',
+    // ];
+    
+    // const thisDeal = () => {
+    //     let status = props.app.deckState.deck;
+    //     let shuffledDeck = [];
+
+    //     if(status.length === 0) {
+    //         props.app.deckState.setDeck(props.app.baseDeck);
+    //     } else {
+    //         console.log('Deck Status:', status)
+    //     }
+
+    //     for(let i=0; i<3; i++) {
+    //         let pos = Math.floor(Math.random() * props.app.baseDeck.length);
+    //         console.table(props.app.baseDeck, pos);
+    //         shuffledDeck.push(props.app.baseDeck[pos]);
+    //         props.app.baseDeck.splice(pos, 1);
+    //     }
+    //     props.app.deckState.setSpread(shuffledDeck);
+    // }
+    
     // const [held, setHeld] = useState([]);
     // const [used, setUsed] = useState([]);
     // const [deck, setDeck] = useState([]);
@@ -48,8 +78,7 @@ const Deck = props => {
 
     return (
         <div id="container">
-            <Spread />
-            
+            <Spread app={appProps} />
         </div>
     );
 }
