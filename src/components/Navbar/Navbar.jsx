@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../../styles/navbar.css'
 import { fade, makeStyles } from '@material-ui/core/styles';
+import RulesModal from '../Modals/RulesModal';
+import AboutModal from '../Modals/AboutModal';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -9,6 +11,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
+import Divider from '@material-ui/core/Divider';
 // import MenuIcon from '@material-ui/icons/Menu';
 // import SearchIcon from '@material-ui/icons/Search';
 // import AccountCircle from '@material-ui/icons/AccountCircle';
@@ -16,6 +19,7 @@ import Menu from '@material-ui/core/Menu';
 // import NotificationsIcon from '@material-ui/icons/Notifications';
 import StopIcon from '@material-ui/icons/Stop';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import MenuBookSharpIcon from '@material-ui/icons/MenuBookSharp';
 import InfoIcon from '@material-ui/icons/Info';
 import RotateLeftIcon from '@material-ui/icons/RotateLeft';
 // import { SwitchCameraSharp } from '@material-ui/icons';
@@ -70,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Navbar(props) {
-    
+    // console.log(props)
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
@@ -80,6 +84,45 @@ export default function Navbar(props) {
     const [glass , setGlass] = useState(0);
     const [wood , setWood] = useState(0);
 
+    //Setting State Counts: 
+    const count = (res) => {
+        console.log(res);
+        switch(true) {
+            case res === 'wood':
+                setWood(wheat + 1);
+                break;
+            case res === 'glass':
+                setGlass(glass + 1);
+                break;
+            case res === 'stone':
+                setStone(stone + 1);
+                break;
+            case res === 'brick':
+                setBrick(brick + 1);
+                break;
+            case res === 'wheat':
+                setWheat(wheat + 1);
+                break;
+            default: console.log(res);
+        }
+    } 
+
+    useEffect(() => {
+        count(props.lastPick);
+    }, [props.lastPick])
+
+    const clearCount = () => {
+        setWood(0);
+        setGlass(0);
+        setStone(0);
+        setBrick(0);
+        setWheat(0);
+
+        props.reset();
+        handleMenuClose();
+    }
+
+    // MENU ITEMS
     const isMenuOpen = Boolean(anchorEl);
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
@@ -99,22 +142,6 @@ export default function Navbar(props) {
     const handleMobileMenuOpen = (event) => {
         setMobileMoreAnchorEl(event.currentTarget);
     };
-
-    // const menuId = 'primary-search-account-menu';
-    // const renderMenu = (
-    //     <Menu
-    //     anchorEl={anchorEl}
-    //     anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-    //     id={menuId}
-    //     keepMounted
-    //     transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-    //     open={isMenuOpen}
-    //     onClose={handleMenuClose}
-    //     >
-    //     <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-    //     <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-    //     </Menu>
-    // );
 
     const mobileMenuId = 'primary-search-account-menu-mobile';
     const renderMobileMenu = (
@@ -167,22 +194,18 @@ export default function Navbar(props) {
             </IconButton>
             <p>Wood</p>
         </MenuItem>
+        <Divider />
+        {/* Solo Rules */}
+        <RulesModal />
+
         {/* About Dev */}
-        <MenuItem>
-        <IconButton aria-label="show new notifications" color="inherit">
-        <Badge badgeContent={wood} color="secondary">
-        <InfoIcon htmlColor='midnightblue' />
-        </Badge>
-        </IconButton>
-        <p>About</p>
-        </MenuItem>
+        <AboutModal />
+
         {/* Reset Deck */}
-        <MenuItem>
+        <MenuItem onClick={clearCount} >
             <IconButton aria-label="show new notifications" color="inherit">
-            <Badge badgeContent={wood} color="secondary">
                 <RotateLeftIcon htmlColor='
                 #9c4a60' />
-            </Badge>
             </IconButton>
             <p>Reset</p>
         </MenuItem>
@@ -220,7 +243,7 @@ export default function Navbar(props) {
     }
 
     return (
-        <div className={classes.grow}>
+        <div id="nav" className={classes.grow}>
         <AppBar className={classes.root} position="fixed">
             <Toolbar>
             <IconButton

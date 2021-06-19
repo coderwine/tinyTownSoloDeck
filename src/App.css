@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+@import url('./styles/deck.css');
+@import url('./styles/footer.css');
+
+:root {
+    --glass: rgb(5, 202, 202);
+    --wheat: goldenrod;
+    --brick: rgb(126, 39, 4);
+    --wood: rgb(107, 59, 31);
+    --stone: rgb(155, 148, 148);
+    --boxSign: 'saddlebrown';
+    --titleShade: 'sienna';
+    --titleColor: 'goldenrod';
+}
+
+/* STYLES */
 .App {
   text-align: center;
   background-image: radial-gradient(
@@ -9,4 +25,36 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.textDisplay {
+    color: white;
+}
+
+#glass {
+    background-color: var(--glass);
+}
+#wheat {
+    background-color: var(--wheat);
+}
+#brick {
+    background-color: var(--brick);
+}
+#wood {
+    background-color: var(--wood);
+}
+#stone {
+    background-color: var(--stone);
+}
+
+footer {
+  background-color: var(--stone);
 }
