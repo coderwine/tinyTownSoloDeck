@@ -6,6 +6,10 @@
     --brick: rgb(126, 39, 4);
     --wood: rgb(107, 59, 31);
     --stone: rgb(155, 148, 148);
+    --boxSign: 'saddlebrown';
+    --titleShade: 'sienna';
+    --titleColor: 'goldenrod';
+
     
 /* 
 glass = cyan / wheat = goldenrod / brick = burnt orange / wood = brown / stone = grey
@@ -14,12 +18,15 @@ glass = cyan / wheat = goldenrod / brick = burnt orange / wood = brown / stone =
 }
 
 #container {
+    display: flex;
+    flex-direction: column;
     height: 85vh;
+    justify-content: center;
+    padding-top: 1em;
 }
 
 .textDisplay {
     color: white;
-    /* font-family: 'Crimson Text', serif; */
 }
 
 #glass {
@@ -27,7 +34,6 @@ glass = cyan / wheat = goldenrod / brick = burnt orange / wood = brown / stone =
 }
 #wheat {
     background-color: var(--wheat);
-    /* font-family: 'Crimson Text', serif; */
 }
 #brick {
     background-color: var(--brick);
