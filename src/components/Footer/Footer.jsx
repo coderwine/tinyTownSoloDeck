@@ -14,23 +14,26 @@ const Footer = () => {
 
     return(
         <footer>
-            <Link className={classes.root}
-                href="https://www.alderac.com/tiny-towns/"
-                target="_blank"
-                rel="noopener"
-            >
-            AEG Site
-            </Link>
+        
+        
+        <Link className={classes.root}
+        href="https://github.com/coderwine/tinyTownSoloDeck"
+        target="_blank"
+        rel="noopener"
+        >
+        v.0.1.0 &copy;2021
+        </Link>
+        
+        <DonateModal />
+        
+        <Link className={classes.root}
+            href="https://www.alderac.com/tiny-towns/"
+            target="_blank"
+            rel="noopener"
+        >
+        AEG Site
+        </Link>
 
-            <DonateModal />
-            
-            <Link className={classes.root}
-                href="https://github.com/coderwine/tinyTownSoloDeck"
-                target="_blank"
-                rel="noopener"
-            >
-            &copy; ejw
-            </Link>
         </footer>
     )
 }
