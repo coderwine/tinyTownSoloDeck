@@ -21,14 +21,9 @@ const Footer = () => {
             >
             AEG Site
             </Link>
-        { /*   <Link className={classes.root}
-                href="#"
-                target="_blank"
-                rel="noopener"
-            >
-            Donate
-    </Link> */}
+
             <DonateModal />
+            
             <Link className={classes.root}
                 href="https://github.com/coderwine/tinyTownSoloDeck"
                 target="_blank"
