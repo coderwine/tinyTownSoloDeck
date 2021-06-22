@@ -9,7 +9,6 @@
 - Build About modal
   - Contact Form for updates
   - Note versioning control
-- Rulebook Modal
 - Deploy
 - Build out Dataflow for ReadMe
 - Build Site Maintenance Log
@@ -20,6 +19,7 @@
 - 6/19: Reset game from menu.  Added Footer.  Deck cycle working.  Resources being tracked.  Last Selection noted.  AEG site linked.  Github linked.  Included Modal shells.
 - 6/20: Cleaned up footer with Donation link.  Donation modal posted with v.0.1.0 context.
 - 6/21: Added site-manual.md.  Will be tracking progression and site structure here.
+  - Built out Rule Book Modal
 
 **The Purpose of this Project**
 This is meant to be a practice in React and styling through Material-UI.

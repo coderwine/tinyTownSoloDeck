@@ -1,5 +1,5 @@
 # TINY TOWNS SOLO
-###Site Structure
+### Site Structure
 This is a Site Manual for Tiny Towns Solo Deck React Web Application.
 Created and Designed by: Eric Winebrenner 2021
 
@@ -44,10 +44,15 @@ Noted list of bugs and the current status.
 
 #### 6.21.21
   - Resource counter (badge) not displaying final count on last draw of a deck prior to reshuffle.  Count displays afterwards.
-  - Status: WIP
+    - Status: Fixed
+  - Rulebook Modal
+    - Padding-Top is off on larger screens.
+      - Status: WIP
 
 ## Developer Notes:
-This sections is mainly for general notes and resources to help with generalized material (how-to resources).
+This sections is mainly for general notes and resources to help with material (how-to resources) and practice build structure.
 
 - [Markdown Guide](https://www.markdownguide.org/basic-syntax)
 - [Wiki Software Versioning](https://en.wikipedia.org/wiki/Software_versioning)
+- [Markdown to PDF](http://markdown2pdf.com/)
+- [Tiny Towns Rule Book](https://www.alderac.com/wp-content/uploads/2018/11/Tiny_Towns_Rules_FINAL.pdf)

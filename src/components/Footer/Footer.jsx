@@ -9,7 +9,7 @@ const useStyles = makeStyles(() => ({
     }
 }))
 
-const Footer = () => {
+const Footer = (props) => {
     const classes = useStyles();
 
     return(
@@ -21,7 +21,7 @@ const Footer = () => {
         target="_blank"
         rel="noopener"
         >
-        v.0.1.0 &copy;2021
+        {props.version}
         </Link>
         
         <DonateModal />

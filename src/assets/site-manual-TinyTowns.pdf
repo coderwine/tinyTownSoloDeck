@@ -1,0 +1,373 @@
+%PDF-1.3
+1 0 obj
+<< /Type /Catalog
+/Outlines 2 0 R
+/Pages 3 0 R >>
+endobj
+2 0 obj
+<< /Type /Outlines /Count 0 >>
+endobj
+3 0 obj
+<< /Type /Pages
+/Kids [6 0 R
+12 0 R
+]
+/Count 2
+/Resources <<
+/ProcSet 4 0 R
+/Font << 
+/F1 8 0 R
+/F2 9 0 R
+>>
+>>
+/MediaBox [0.000 0.000 595.280 841.890]
+ >>
+endobj
+4 0 obj
+[/PDF /Text ]
+endobj
+5 0 obj
+<<
+/Creator (DOMPDF)
+/CreationDate (D:20210622034255+00'00')
+/ModDate (D:20210622034255+00'00')
+>>
+endobj
+6 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Annots [ 10 0 R ]
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 3669 >>
+stream
+
+0.000 0.000 0.000 rg
+BT 34.016 768.985 Td /F1 24.0 Tf  [(TINY TOWNS SOLO)] TJ ET
+BT 34.016 733.859 Td /F1 14.0 Tf  [(Site Structure)] TJ ET
+BT 34.016 705.078 Td /F2 12.0 Tf  [(This is a Site Manual for Tiny Towns Solo Deck React Web Application. Created and Designed by: Eric )] TJ ET
+BT 34.016 690.822 Td /F2 12.0 Tf  [(Winebrenner 2021)] TJ ET
+BT 34.016 655.924 Td /F1 18.0 Tf  [(Main Concept:)] TJ ET
+BT 34.016 619.600 Td /F1 18.0 Tf  [(Mission Statement:)] TJ ET
+BT 34.016 583.276 Td /F1 18.0 Tf  [(Wireframe:)] TJ ET
+0.000 0.000 0.800 rg
+BT 34.016 552.654 Td /F2 12.0 Tf  [(Figma)] TJ ET
+0.000 0.000 0.800 RG
+0.6 w 0 J [  ] 0 d
+34.016 549.954 m 64.688 549.954 l S
+0.000 0.000 0.000 rg
+BT 34.016 517.756 Td /F1 18.0 Tf  [(Site Structure:)] TJ ET
+0.000 0.000 0.800 rg
+BT 34.016 487.134 Td /F2 12.0 Tf  [(Trello Board)] TJ ET
+0.6 w 0 J [  ] 0 d
+34.016 484.434 m 95.672 484.434 l S
+0.000 0.000 0.000 rg
+BT 34.016 456.899 Td /F1 14.0 Tf  [(Data Flow)] TJ ET
+BT 34.016 426.180 Td /F1 14.0 Tf  [(Navigation)] TJ ET
+BT 34.016 395.460 Td /F1 14.0 Tf  [(Landing)] TJ ET
+BT 34.016 364.741 Td /F1 14.0 Tf  [(Components)] TJ ET
+BT 34.016 329.357 Td /F1 18.0 Tf  [(Site Maintenance:)] TJ ET
+BT 34.016 298.736 Td /F2 12.0 Tf  [(This section will detail the sites maintenance log to help track progress and latest build process. If a field is )] TJ ET
+BT 34.016 284.480 Td /F2 12.0 Tf  [(left blank, it will reference the row above it. \(ie: version notes v.0.1.0 until otherwise noted in a later row.\). )] TJ ET
+BT 34.016 270.224 Td /F2 12.0 Tf  [(Greater detail will be displayed within )] TJ ET
+BT 221.324 270.224 Td /F1 12.0 Tf  [(Patch Notes)] TJ ET
+BT 282.308 270.224 Td /F2 12.0 Tf  [( and/or the )] TJ ET
+BT 336.632 270.224 Td /F1 12.0 Tf  [(Bug Log)] TJ ET
+BT 380.312 270.224 Td /F2 12.0 Tf  [(.)] TJ ET
+BT 34.016 241.928 Td /F2 12.0 Tf  [(This is also meant to track the last point of when upkeep was handled.)] TJ ET
+BT 36.266 210.784 Td /F1 12.0 Tf  [(Index)] TJ ET
+BT 74.612 210.784 Td /F1 12.0 Tf  [(Date)] TJ ET
+BT 107.606 210.784 Td /F1 12.0 Tf  [(Version)] TJ ET
+BT 169.760 210.784 Td /F1 12.0 Tf  [(Detail)] TJ ET
+BT 222.578 210.784 Td /F1 12.0 Tf  [(Status)] TJ ET
+BT 288.914 210.784 Td /F1 12.0 Tf  [(Notes)] TJ ET
+BT 36.266 193.528 Td /F2 12.0 Tf  [(001)] TJ ET
+BT 68.606 193.528 Td /F2 12.0 Tf  [(6.21.21)] TJ ET
+BT 107.606 193.528 Td /F2 12.0 Tf  [(0.01.00)] TJ ET
+BT 150.602 193.528 Td /F2 12.0 Tf  [(Unclear Notes)] TJ ET
+BT 222.578 193.528 Td /F2 12.0 Tf  [(WIP)] TJ ET
+BT 257.582 193.528 Td /F2 12.0 Tf  [(Created Maint Log)] TJ ET
+BT 34.016 168.017 Td /F1 18.0 Tf  [(Patch Notes:)] TJ ET
+BT 34.016 137.396 Td /F2 12.0 Tf  [(Greater detail of versioning notes will be displayed here.)] TJ ET
+BT 34.016 107.180 Td /F1 12.0 Tf  [(6.21)] TJ ET
+0.000 0.000 0.000 RG
+57.816 80.069 m 
+57.816 80.618 57.589 81.165 57.201 81.554 c
+56.812 81.942 56.266 82.169 55.716 82.169 c
+55.166 82.169 54.620 81.942 54.231 81.554 c
+53.842 81.165 53.616 80.618 53.616 80.069 c
+53.616 79.519 53.842 78.972 54.231 78.584 c
+54.620 78.195 55.166 77.969 55.716 77.969 c
+56.266 77.969 56.812 78.195 57.201 78.584 c
+57.589 78.972 57.816 79.519 57.816 80.069 c f
+BT 64.016 76.964 Td /F2 12.0 Tf  [(v.0.1.0: )] TJ ET
+0.48 w 1 J 1 j
+87.816 65.813 m 
+87.816 66.362 87.589 66.909 87.201 67.298 c
+86.812 67.686 86.266 67.913 85.716 67.913 c
+85.166 67.913 84.620 67.686 84.231 67.298 c
+83.842 66.909 83.616 66.362 83.616 65.813 c
+83.616 65.263 83.842 64.716 84.231 64.328 c
+84.620 63.939 85.166 63.713 85.716 63.713 c
+86.266 63.713 86.812 63.939 87.201 64.328 c
+87.589 64.716 87.816 65.263 87.816 65.813 c s
+BT 94.016 62.593 Td /F2 12.0 Tf  [(Beta build completed pre-deployment.)] TJ ET
+endstream
+endobj
+8 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Times-Bold
+/Encoding /WinAnsiEncoding
+>>
+endobj
+9 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F2
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+>>
+endobj
+10 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 11 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 34.0157 486.0539 95.6717 497.9339 ]
+>>
+endobj
+11 0 obj
+<< /Type /Action
+/S /URI
+/URI (https://trello.com/b/MlL4A15e/tiny-towns-solo)
+>>
+endobj
+12 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Annots [ 14 0 R 16 0 R 18 0 R 20 0 R ]
+/Contents 13 0 R
+>>
+endobj
+13 0 obj
+<<
+/Length 5002 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.48 w 1 J 1 j
+BT 34.016 775.827 Td /F1 18.0 Tf  [(Bug Log:)] TJ ET
+BT 34.016 745.205 Td /F2 12.0 Tf  [(Noted list of bugs and the current status.)] TJ ET
+BT 34.016 714.989 Td /F1 12.0 Tf  [(6.21.21)] TJ ET
+57.816 687.878 m 
+57.816 688.428 57.589 688.974 57.201 689.363 c
+56.812 689.752 56.266 689.978 55.716 689.978 c
+55.166 689.978 54.620 689.752 54.231 689.363 c
+53.842 688.974 53.616 688.428 53.616 687.878 c
+53.616 687.328 53.842 686.782 54.231 686.393 c
+54.620 686.005 55.166 685.778 55.716 685.778 c
+56.266 685.778 56.812 686.005 57.201 686.393 c
+57.589 686.782 57.816 687.328 57.816 687.878 c f
+BT 64.016 684.773 Td /F2 12.0 Tf  [(Resource counter \(badge\) not displaying final count on last draw of a deck prior to reshuffle. Count )] TJ ET
+BT 64.016 670.517 Td /F2 12.0 Tf  [(displays afterwards. )] TJ ET
+0.48 w 1 J 1 j
+87.816 659.366 m 
+87.816 659.916 87.589 660.462 87.201 660.851 c
+86.812 661.240 86.266 661.466 85.716 661.466 c
+85.166 661.466 84.620 661.240 84.231 660.851 c
+83.842 660.462 83.616 659.916 83.616 659.366 c
+83.616 658.816 83.842 658.270 84.231 657.881 c
+84.620 657.493 85.166 657.266 85.716 657.266 c
+86.266 657.266 86.812 657.493 87.201 657.881 c
+87.589 658.270 87.816 658.816 87.816 659.366 c s
+BT 94.016 656.261 Td /F2 12.0 Tf  [(Status: Fixed)] TJ ET
+57.816 645.110 m 
+57.816 645.660 57.589 646.206 57.201 646.595 c
+56.812 646.984 56.266 647.210 55.716 647.210 c
+55.166 647.210 54.620 646.984 54.231 646.595 c
+53.842 646.206 53.616 645.660 53.616 645.110 c
+53.616 644.560 53.842 644.014 54.231 643.625 c
+54.620 643.237 55.166 643.010 55.716 643.010 c
+56.266 643.010 56.812 643.237 57.201 643.625 c
+57.589 644.014 57.816 644.560 57.816 645.110 c f
+BT 64.016 642.005 Td /F2 12.0 Tf  [(Rulebook Modal )] TJ ET
+0.48 w 1 J 1 j
+87.816 630.854 m 
+87.816 631.404 87.589 631.950 87.201 632.339 c
+86.812 632.728 86.266 632.954 85.716 632.954 c
+85.166 632.954 84.620 632.728 84.231 632.339 c
+83.842 631.950 83.616 631.404 83.616 630.854 c
+83.616 630.304 83.842 629.758 84.231 629.369 c
+84.620 628.981 85.166 628.754 85.716 628.754 c
+86.266 628.754 86.812 628.981 87.201 629.369 c
+87.589 629.758 87.816 630.304 87.816 630.854 c s
+BT 94.016 627.749 Td /F2 12.0 Tf  [(Padding-Top is off on larger screens. )] TJ ET
+113.616 614.498 4.200 4.200 re f
+BT 124.016 613.493 Td /F2 12.0 Tf  [(Status: WIP)] TJ ET
+BT 34.016 578.595 Td /F1 18.0 Tf  [(Developer Notes:)] TJ ET
+BT 34.016 547.973 Td /F2 12.0 Tf  [(This sections is mainly for general notes and resources to help with material \(how-to resources\) and practice )] TJ ET
+BT 34.016 533.717 Td /F2 12.0 Tf  [(build structure.)] TJ ET
+57.816 508.526 m 
+57.816 509.076 57.589 509.622 57.201 510.011 c
+56.812 510.400 56.266 510.626 55.716 510.626 c
+55.166 510.626 54.620 510.400 54.231 510.011 c
+53.842 509.622 53.616 509.076 53.616 508.526 c
+53.616 507.976 53.842 507.430 54.231 507.041 c
+54.620 506.653 55.166 506.426 55.716 506.426 c
+56.266 506.426 56.812 506.653 57.201 507.041 c
+57.589 507.430 57.816 507.976 57.816 508.526 c f
+0.000 0.000 0.800 rg
+BT 64.016 505.421 Td /F2 12.0 Tf  [(Markdown Guide)] TJ ET
+0.000 0.000 0.800 RG
+0.6 w 0 J [  ] 0 d
+64.016 502.721 m 149.000 502.721 l S
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+57.816 494.270 m 
+57.816 494.820 57.589 495.366 57.201 495.755 c
+56.812 496.144 56.266 496.370 55.716 496.370 c
+55.166 496.370 54.620 496.144 54.231 495.755 c
+53.842 495.366 53.616 494.820 53.616 494.270 c
+53.616 493.720 53.842 493.174 54.231 492.785 c
+54.620 492.397 55.166 492.170 55.716 492.170 c
+56.266 492.170 56.812 492.397 57.201 492.785 c
+57.589 493.174 57.816 493.720 57.816 494.270 c f
+0.000 0.000 0.800 rg
+BT 64.016 491.165 Td /F2 12.0 Tf  [(Wiki Software Versioning)] TJ ET
+0.000 0.000 0.800 RG
+0.6 w 0 J [  ] 0 d
+64.016 488.465 m 190.664 488.465 l S
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+57.816 480.014 m 
+57.816 480.564 57.589 481.110 57.201 481.499 c
+56.812 481.888 56.266 482.114 55.716 482.114 c
+55.166 482.114 54.620 481.888 54.231 481.499 c
+53.842 481.110 53.616 480.564 53.616 480.014 c
+53.616 479.464 53.842 478.918 54.231 478.529 c
+54.620 478.141 55.166 477.914 55.716 477.914 c
+56.266 477.914 56.812 478.141 57.201 478.529 c
+57.589 478.918 57.816 479.464 57.816 480.014 c f
+0.000 0.000 0.800 rg
+BT 64.016 476.909 Td /F2 12.0 Tf  [(Markdown to PDF)] TJ ET
+0.000 0.000 0.800 RG
+0.6 w 0 J [  ] 0 d
+64.016 474.209 m 154.016 474.209 l S
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+57.816 465.758 m 
+57.816 466.308 57.589 466.854 57.201 467.243 c
+56.812 467.632 56.266 467.858 55.716 467.858 c
+55.166 467.858 54.620 467.632 54.231 467.243 c
+53.842 466.854 53.616 466.308 53.616 465.758 c
+53.616 465.208 53.842 464.662 54.231 464.273 c
+54.620 463.885 55.166 463.658 55.716 463.658 c
+56.266 463.658 56.812 463.885 57.201 464.273 c
+57.589 464.662 57.816 465.208 57.816 465.758 c f
+0.000 0.000 0.800 rg
+BT 64.016 462.653 Td /F2 12.0 Tf  [(Tiny Towns Rule Book)] TJ ET
+0.000 0.000 0.800 RG
+0.6 w 0 J [  ] 0 d
+64.016 459.953 m 177.020 459.953 l S
+endstream
+endobj
+14 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 15 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 64.0157 504.3415 148.9997 516.2215 ]
+>>
+endobj
+15 0 obj
+<< /Type /Action
+/S /URI
+/URI (https://www.markdownguide.org/basic-syntax)
+>>
+endobj
+16 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 17 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 64.0157 490.0855 190.6637 501.9655 ]
+>>
+endobj
+17 0 obj
+<< /Type /Action
+/S /URI
+/URI (https://en.wikipedia.org/wiki/Software_versioning)
+>>
+endobj
+18 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 19 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 64.0157 475.8295 154.0157 487.7095 ]
+>>
+endobj
+19 0 obj
+<< /Type /Action
+/S /URI
+/URI (http://markdown2pdf.com/)
+>>
+endobj
+20 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 21 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 64.0157 461.5735 177.0197 473.4535 ]
+>>
+endobj
+21 0 obj
+<< /Type /Action
+/S /URI
+/URI (https://www.alderac.com/wp-content/uploads/2018/11/Tiny_Towns_Rules_FINAL.pdf)
+>>
+endobj
+xref
+0 22
+0000000000 65535 f 
+0000000009 00000 n 
+0000000074 00000 n 
+0000000120 00000 n 
+0000000291 00000 n 
+0000000320 00000 n 
+0000000434 00000 n 
+0000000516 00000 n 
+0000004237 00000 n 
+0000004345 00000 n 
+0000004454 00000 n 
+0000004580 00000 n 
+0000004677 00000 n 
+0000004782 00000 n 
+0000009837 00000 n 
+0000009964 00000 n 
+0000010058 00000 n 
+0000010185 00000 n 
+0000010286 00000 n 
+0000010413 00000 n 
+0000010489 00000 n 
+0000010616 00000 n 
+trailer
+<<
+/Size 22
+/Root 1 0 R
+/Info 5 0 R
+>>
+startxref
+10745
+%%EOF

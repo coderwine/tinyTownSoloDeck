@@ -22,6 +22,7 @@ function App() {
 
   const [discard, setDiscard] = useState(0);
   const [lastPick, setLastPick] = useState('');
+  const [version, setVersion] = useState('v.0.1.0')
 
   const appProps = {
     deckState: {
@@ -59,7 +60,7 @@ function App() {
     <div className="App classes.root">
       <Navbar lastPick={lastPick} reset={resetGame} />
       <Deck app={appProps} />
-      <Footer />
+      <Footer version={version} />
     </div>
   );
 }
