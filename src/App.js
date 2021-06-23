@@ -44,11 +44,6 @@ function App() {
     baseDeck: baseDeck,
   }
 
-  useEffect(() => {
-    console.log('Current Deck: ', deck);
-    console.log('Discard Count:', discard);
-  }, [deck]); 
-
   const resetGame = () => {
     setDeck(baseDeck);
     setDiscard(0);
@@ -56,9 +51,18 @@ function App() {
     setSpread([]);
   }
 
+  const navProps = {
+    lastPick: lastPick,
+    resetGame: resetGame,
+    version: {
+      version: version,
+      setVersion: setVersion
+    }
+  }
+
   return (
     <div className="App classes.root">
-      <Navbar lastPick={lastPick} reset={resetGame} />
+      <Navbar navProps={navProps} />
       <Deck app={appProps} />
       <Footer version={version} />
     </div>
@@ -67,6 +71,7 @@ function App() {
 
 export default App;
 
+// <Navbar lastPick={lastPick} reset={resetGame} />
 /* NOTE
 ! File Notes:
   States

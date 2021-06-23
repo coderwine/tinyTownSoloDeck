@@ -17,11 +17,11 @@ const Footer = (props) => {
         
         
         <Link className={classes.root}
-        href="https://github.com/coderwine/tinyTownSoloDeck"
+        href="https://boardgamegeek.com/boardgame/265736/tiny-towns"
         target="_blank"
         rel="noopener"
         >
-        {props.version}
+        BGG
         </Link>
         
         <DonateModal />
@@ -31,7 +31,7 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener"
         >
-        AEG Site
+        AEG
         </Link>
 
         </footer>
