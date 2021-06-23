@@ -22,6 +22,7 @@ function App() {
 
   const [discard, setDiscard] = useState(0);
   const [lastPick, setLastPick] = useState('');
+  const [version, setVersion] = useState('v.0.1.0')
 
   const appProps = {
     deckState: {
@@ -43,11 +44,6 @@ function App() {
     baseDeck: baseDeck,
   }
 
-  useEffect(() => {
-    console.log('Current Deck: ', deck);
-    console.log('Discard Count:', discard);
-  }, [deck]); 
-
   const resetGame = () => {
     setDeck(baseDeck);
     setDiscard(0);
@@ -55,17 +51,27 @@ function App() {
     setSpread([]);
   }
 
+  const navProps = {
+    lastPick: lastPick,
+    resetGame: resetGame,
+    version: {
+      version: version,
+      setVersion: setVersion
+    }
+  }
+
   return (
     <div className="App classes.root">
-      <Navbar lastPick={lastPick} reset={resetGame} />
+      <Navbar navProps={navProps} />
       <Deck app={appProps} />
-      <Footer />
+      <Footer version={version} />
     </div>
   );
 }
 
 export default App;
 
+// <Navbar lastPick={lastPick} reset={resetGame} />
 /* NOTE
 ! File Notes:
   States

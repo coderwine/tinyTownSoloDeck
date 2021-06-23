@@ -9,33 +9,31 @@ const useStyles = makeStyles(() => ({
     }
 }))
 
-const Footer = () => {
+const Footer = (props) => {
     const classes = useStyles();
 
     return(
         <footer>
-            <Link className={classes.root}
-                href="https://www.alderac.com/tiny-towns/"
-                target="_blank"
-                rel="noopener"
-            >
-            AEG Site
-            </Link>
-        { /*   <Link className={classes.root}
-                href="#"
-                target="_blank"
-                rel="noopener"
-            >
-            Donate
-    </Link> */}
-            <DonateModal />
-            <Link className={classes.root}
-                href="https://github.com/coderwine/tinyTownSoloDeck"
-                target="_blank"
-                rel="noopener"
-            >
-            &copy; ejw
-            </Link>
+        
+        
+        <Link className={classes.root}
+        href="https://boardgamegeek.com/boardgame/265736/tiny-towns"
+        target="_blank"
+        rel="noopener"
+        >
+        BGG
+        </Link>
+        
+        <DonateModal />
+        
+        <Link className={classes.root}
+            href="https://www.alderac.com/tiny-towns/"
+            target="_blank"
+            rel="noopener"
+        >
+        AEG
+        </Link>
+
         </footer>
     )
 }

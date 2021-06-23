@@ -3,7 +3,6 @@ import '../../styles/deck.css';
 import Spread from './Spread';
 
 const Deck = props => {
-    console.log(props)
     let appProps = props.app;
 
     return (

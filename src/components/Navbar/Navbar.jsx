@@ -74,7 +74,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Navbar(props) {
-    // console.log(props)
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
@@ -83,10 +82,11 @@ export default function Navbar(props) {
     const [stone, setStone] = useState(0);
     const [glass , setGlass] = useState(0);
     const [wood , setWood] = useState(0);
+    const [status, setStatus] = useState('')
 
     //Setting State Counts: 
     const count = (res) => {
-        console.log(res);
+        // console.log(res);
         switch(true) {
             case res === 'wood':
                 setWood(wheat + 1);
@@ -103,13 +103,14 @@ export default function Navbar(props) {
             case res === 'wheat':
                 setWheat(wheat + 1);
                 break;
-            default: console.log(res);
+            default: 
+                status !== ''? console.log(status) : setStatus(res);
         }
     } 
 
     useEffect(() => {
-        count(props.lastPick);
-    }, [props.lastPick])
+        count(props.navProps.lastPick);
+    }, [props.navProps.lastPick])
 
     const clearCount = () => {
         setWood(0);
@@ -118,7 +119,7 @@ export default function Navbar(props) {
         setBrick(0);
         setWheat(0);
 
-        props.reset();
+        props.navProps.resetGame();
         handleMenuClose();
     }
 
@@ -199,7 +200,7 @@ export default function Navbar(props) {
         <RulesModal />
 
         {/* About Dev */}
-        <AboutModal />
+        <AboutModal navProps={props.navProps.version} />
 
         {/* Reset Deck */}
         <MenuItem onClick={clearCount} >
@@ -216,7 +217,7 @@ export default function Navbar(props) {
     // LAST PICK CHECK AND DISPLAY
     const wasPicked = () => {
 
-        let pickProps = props.lastPick;
+        let pickProps = props.navProps.lastPick;
         let thisClass;
 
         switch(true) {
@@ -252,7 +253,7 @@ export default function Navbar(props) {
                 color="inherit"
                 aria-label="open drawer"
             >
-                <StopIcon className={classes.picked} htmlColor={wasPicked()} /> {props.lastPick === '' ? 'Tiny Towns Solo' : props.lastPick}
+                <StopIcon className={classes.picked} htmlColor={wasPicked()} /> {props.navProps.lastPick === '' ? 'Tiny Towns Solo' : props.navProps.lastPick}
                 </IconButton>
         
             <div className={classes.grow} />
@@ -318,9 +319,6 @@ export default function Navbar(props) {
             </Toolbar>
         </AppBar>
         {renderMobileMenu}
-        {
-           // renderMenu
-        }
         </div>
     );
 }
