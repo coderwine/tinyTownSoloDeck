@@ -10,7 +10,8 @@ The purpose of this build is to become a bit more familiar with the React librar
 I aim to make a mobile friend site where Tiny Town players can play solo sessions quickly without needing to shuffle the deck.  If at all possible, it would be nice to gain back the funds required to have this deployed and maintained utilizing Stripe as a donation method.
 
 ## Wireframe:
-[Figma](#)
+[Figma](https://www.figma.com/file/jl6MledrobDKbph3H8qUaq/Tiny-Towns-Solo-Wireframe?node-id=0%3A1)
+[Prototype Example](https://www.figma.com/proto/jl6MledrobDKbph3H8qUaq/Tiny-Towns-Solo-Wireframe?node-id=1%3A2&scaling=scale-down&page-id=0%3A1)
 
 ## Site Structure:
 [Trello Board](https://trello.com/b/MlL4A15e/tiny-towns-solo)
@@ -72,10 +73,14 @@ Noted list of bugs and the current status.
 
 #### 6.21.21
   - Resource counter (badge) not displaying final count on last draw of a deck prior to reshuffle.  Count displays afterwards.
-    - Status: Fixed
+    - Status: Fixed - 6/22
   - Rulebook Modal
     - Padding-Top is off on larger screens.
-      - Status: WIP
+      - Status: Fixed - 6/23
+### 6.22.21
+  - About Modal
+    - Padding-Top is off on larger screens.
+      - Status: Fixed - 6/23
 
 ## Developer Notes:
 This sections is mainly for general notes and resources to help with material (how-to resources) and practice build structure.

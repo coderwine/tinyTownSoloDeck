@@ -3,6 +3,7 @@ import '@fontsource/roboto';
 import './App.css';
 
 // Components
+import OnLoadModal from './components/Modals/OnLoadModal'
 import Navbar from './components/Navbar/Navbar';
 import Deck from './components/Deck/Deck';
 import Footer from './components/Footer/Footer';
@@ -22,7 +23,8 @@ function App() {
 
   const [discard, setDiscard] = useState(0);
   const [lastPick, setLastPick] = useState('');
-  const [version, setVersion] = useState('v.0.1.0')
+  const [version, setVersion] = useState('v.0.1.0');
+  const [start, setStart] = useState(true);
 
   const appProps = {
     deckState: {
@@ -62,6 +64,7 @@ function App() {
 
   return (
     <div className="App classes.root">
+      <OnLoadModal start={start} />
       <Navbar navProps={navProps} />
       <Deck app={appProps} />
       <Footer version={version} />

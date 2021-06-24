@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import Link from '@material-ui/core/Link';
+import TakeMoney from '../Stripe/Stripe';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -19,12 +20,18 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     color: 'black',
+  },
+  stripeBtn: {
+    margin: '1rem auto',
+    display: 'flex',
+    justifyContent: 'center',
   }
 }));
 
 export default function DonateModal() {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const [value, setValue] = useState(0)
 
   const handleOpen = () => {
     setOpen(true);
@@ -58,8 +65,12 @@ export default function DonateModal() {
             <p id="transition-modal-description">
             I enjoyed making this project and hope that you also enjoy using it.  If you'd like to donate any type of funds for this project, it would be much appreciated!  Cost for servers and minor upkeep does take effort but, honestly, I'm hoping that this is just something useful and fun to use.  I enjoy playing around building this and hope to make this a little more "clean" for future versionings.  Thanks for taking a look at this!
             <hr/>
-            If you like to donate, here is the link: <Link href="#"       target="_blank" rel="noopener" >PayPal</Link>
+            If you like to donate, here is the link: 
             <br/>
+            <div className={classes.stripeBtn} >
+            <input type='number' value={value} onChange={e => setValue(e.target.value)} />
+            <TakeMoney props={value} />
+            </div>
             Thanks again! 
             </p>
           </div>

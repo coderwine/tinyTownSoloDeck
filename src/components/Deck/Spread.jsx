@@ -55,7 +55,6 @@ const Spread = props => {
     const thisDeal = () => {
         let deckPath= props.app.deckState;
         let currentDeck = deckPath.deck;
-        console.log('This Current:', currentDeck.length)
         let shuffledDeck = [];
 
         if(currentDeck.length === 0) {

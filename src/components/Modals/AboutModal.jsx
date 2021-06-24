@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import Link from '@material-ui/core/Link';
 import ContactForm from '../Forms/ContactForm';
+import OnLoadModal from './OnLoadModal';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -23,8 +24,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
-    // padding: theme.spacing(8, 4, 3),
-    padding: '16rem 1rem 1rem 1rem',
+    padding: '.25rem 1rem 1rem 1rem',
+    position: 'absolute',
+    top: '0',
   },
   close: {
     position: 'static',
@@ -56,9 +58,6 @@ export default function AboutModal(props) {
 
   return (
     <div>
-      {/*<button type="button" onClick={handleOpen}>
-        react-transition-group
-  </button>*/}
       <MenuItem onClick={handleOpen} >
         <IconButton aria-label="show new notifications" color="inherit">
         <InfoIcon htmlColor='midnightblue' />
@@ -95,7 +94,10 @@ export default function AboutModal(props) {
 
             <h3>What I'd like to Include:</h3>
             <p>Eventually I hope to include anything that involves the available expansions.</p>
-            <div className={classes.credits}>
+
+              <OnLoadModal />
+
+              <div className={classes.credits}>
               <Link className={classes.root}
               href="https://github.com/coderwine/tinyTownSoloDeck"
               target="_blank"
