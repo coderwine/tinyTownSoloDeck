@@ -3,6 +3,7 @@
   - Strip
     - Setup Stripe Component
     - Trying to connect state to amount attribute in Checkout
+    - Building out .env structure for Strip
 - Update fonts to reflect style
 - Deploy
 - Notable challenges/success

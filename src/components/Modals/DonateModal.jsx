@@ -6,6 +6,8 @@ import Fade from '@material-ui/core/Fade';
 import Link from '@material-ui/core/Link';
 import TakeMoney from '../Stripe/Stripe';
 
+import env from 'react-dotenv';
+
 const useStyles = makeStyles((theme) => ({
   modal: {
     display: 'flex',
@@ -40,6 +42,8 @@ export default function DonateModal() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  console.log(env.STRIPE_KEY)
 
   return (
     <div>

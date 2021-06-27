@@ -1,5 +1,6 @@
 import React from 'react'
 import StripeCheckout from 'react-stripe-checkout';
+import env from 'react-dotenv';
 
 export default class TakeMoney extends React.Component {
 
@@ -36,7 +37,7 @@ export default class TakeMoney extends React.Component {
                     description='Tiny Towns Solo Donation'
                     amount={100}
                     currancy='USD'
-                    stripeKey="pk_test_51J5hJsBMWHvzN9OzibKSEsVAhQqbGJAtcxz23Mq4JCZhiSqDq1P6rGxeu1Gfvqy2Mi6Zhzt8P1BeHgKydaRt9q7g00oxqsDTgW"
+                    stripeKey={env.STRIPE_KEY}
                     token={this.onToken}
                     email="eric@ericjwinebrenner.com"
                     billingAddress={true}
