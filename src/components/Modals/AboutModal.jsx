@@ -81,6 +81,7 @@ export default function AboutModal(props) {
           <div className={classes.paper}>
           <h4 className={classes.close} onClick={handleClose}>X</h4>
             <h2 id="transition-modal-title">About this Project</h2>
+            <p>Please note that this is 100% designed for mobile.  I hope to eventually make it as clean as possible.  This means that viewing this on a desktop (or labtop) may not be ideal; however, if you are using a labtop, you can right click the browser, choose "inspect" and change the size of the screen to reflect a mobile device by clicking the little screen icon at the top of your inspect.</p>
             <p>This was built for two reasons:  As a fun challenge for myself in development, and to maybe have a quick tool that I can use when playing Tiny Towns solo variant.</p>
             <p>I will note that I am not associated with AEG and would like to thank them and the design team for producing this fun game!</p>
             <p>The purpose of this page is only to aide and is, by no means, meant to replace the fun of flipping cards.  Use this to have fun!</p>

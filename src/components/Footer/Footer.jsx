@@ -1,4 +1,3 @@
-// import '../../styles/footer.css';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import DonateModal from '../Modals/DonateModal';

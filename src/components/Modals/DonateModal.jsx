@@ -1,12 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import Link from '@material-ui/core/Link';
-import TakeMoney from '../Stripe/Stripe';
-
-import env from 'react-dotenv';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -23,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   link: {
     color: 'black',
   },
-  stripeBtn: {
+  donateBtn: {
     margin: '1rem auto',
     display: 'flex',
     justifyContent: 'center',
@@ -33,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
 export default function DonateModal() {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
-  const [value, setValue] = useState(0)
 
   const handleOpen = () => {
     setOpen(true);
@@ -42,8 +38,6 @@ export default function DonateModal() {
   const handleClose = () => {
     setOpen(false);
   };
-
-  console.log(env.STRIPE_KEY)
 
   return (
     <div>
@@ -68,14 +62,16 @@ export default function DonateModal() {
             <h2 id="transition-modal-title">If You Would Like to Donate</h2>
             <p id="transition-modal-description">
             I enjoyed making this project and hope that you also enjoy using it.  If you'd like to donate any type of funds for this project, it would be much appreciated!  Cost for servers and minor upkeep does take effort but, honestly, I'm hoping that this is just something useful and fun to use.  I enjoy playing around building this and hope to make this a little more "clean" for future versionings.  Thanks for taking a look at this!
-            <hr/>
-            If you like to donate, here is the link: 
+            <hr/> 
             <br/>
-            <div className={classes.stripeBtn} >
-            <input type='number' value={value} onChange={e => setValue(e.target.value)} />
-            <TakeMoney props={value} />
+            <div className={classes.donateBtn} >
+              <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="4WP6U559SQW7N" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+              </form>
             </div>
-            Thanks again! 
+            Thanks again and enjoy! 
             </p>
           </div>
         </Fade>

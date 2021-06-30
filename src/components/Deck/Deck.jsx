@@ -1,4 +1,3 @@
-import {useState, useEffect} from 'react';
 import '../../styles/deck.css';
 import Spread from './Spread';
 

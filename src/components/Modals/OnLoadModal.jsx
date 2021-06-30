@@ -95,7 +95,7 @@ export default function AboutModal(props) {
             <div className={classes.paper}>
             <h4 className={classes.close} onClick={handleClose}>X</h4>
             <h1>Welcome!</h1>
-            <h2 id="transition-modal-title"> Here's a Quick What-To-Do with Tiny Towns Solo!</h2>
+            <h2 id="transition-modal-title">Here's a Quick What-To-Do with Tiny Towns Solo!</h2>
             <div className={classes.steps} >
                 <h3>On the Menu Bar:</h3>
                 <img className={classes.img} src={imgOne} alt="Default Menu Bar" />

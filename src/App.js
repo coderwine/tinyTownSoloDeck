@@ -23,7 +23,7 @@ function App() {
 
   const [discard, setDiscard] = useState(0);
   const [lastPick, setLastPick] = useState('');
-  const [version, setVersion] = useState('v.0.1.0');
+  const [version, setVersion] = useState('v.1.0.0');
   const [start, setStart] = useState(true);
 
   const appProps = {
@@ -73,30 +73,3 @@ function App() {
 }
 
 export default App;
-
-// <Navbar lastPick={lastPick} reset={resetGame} />
-/* NOTE
-! File Notes:
-  States
-    - deck
-      Current state of the overall deck throughout game.  Default is an array of 5 resources in multiples of 3.
-        - NEEDED IN: 
-          - Deck
-          - Spread
-
-    - spread
-      After shuffled, a set of 3 resources are selected and set here to map over to display for user to select one.
-        - NEEDED IN:
-          - Spread
-
-    - discard
-      Current state of the discarded cards (both selected and unused resources).  Is evaluated against the state of "deck" to gauge when to reshuffle resources.
-        - NEEDED IN:
-          - Spread
-
-    - lastPicked
-      A feedback state to show users what they had selected last.  Default value is an empty string.
-        - NEEDED IN: 
-          - Navbar
-
-*/

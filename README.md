@@ -1,11 +1,5 @@
 **TODO**
-- Donation Modal
-  - Strip
-    - Setup Stripe Component
-    - Trying to connect state to amount attribute in Checkout
-    - Building out .env structure for Strip
 - Update fonts to reflect style
-- Deploy
 - Notable challenges/success
 
 **The Purpose of this Project**
@@ -23,6 +17,7 @@ Current build only utilizes the base game.
   - Built out Rule Book Modal
 - 6/22: About Modal completed.  Formspree connected.  Site Manual updated.  Data flow completed.  ContactForm completed.  OnLoadModal shell created.
 - 6/23: OnLoadModal created.  How-To-Use information detailed.  Fixed modal bugs.  Obtained Strip API Key and linked accounts.  Trying to set up API to function as needed.
+- 6/30: Deployed to Firebase.  Included a Paypal donation button.  Clean up of files.
 
 **Technology Used**
 - React
@@ -30,4 +25,4 @@ Current build only utilizes the base game.
 - Material-UI
 - Figma
 - Trello
-- Stripe
+- Firebase
