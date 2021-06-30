@@ -43,19 +43,16 @@ const Spread = props => {
     const classes = useStyles();
 
     const selectedCard = (resource) => {
-        // console.log('selectCard', discardCount);
         props.app.lastPick.setLastPick(resource)
 
         value !== 15 ? discardCount.setDiscard(value + 3) : discardCount.setDiscard(0);
         
         thisDeal();
-        // console.log(props.app.deckState.deck)
     }
 
     const thisDeal = () => {
         let deckPath= props.app.deckState;
         let currentDeck = deckPath.deck;
-        console.log('This Current:', currentDeck.length)
         let shuffledDeck = [];
 
         if(currentDeck.length === 0) {

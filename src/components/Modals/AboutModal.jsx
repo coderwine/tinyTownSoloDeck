@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import Link from '@material-ui/core/Link';
 import ContactForm from '../Forms/ContactForm';
+import OnLoadModal from './OnLoadModal';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -23,8 +24,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
-    // padding: theme.spacing(8, 4, 3),
-    padding: '16rem 1rem 1rem 1rem',
+    padding: '.25rem 1rem 1rem 1rem',
+    position: 'absolute',
+    top: '0',
   },
   close: {
     position: 'static',
@@ -56,9 +58,6 @@ export default function AboutModal(props) {
 
   return (
     <div>
-      {/*<button type="button" onClick={handleOpen}>
-        react-transition-group
-  </button>*/}
       <MenuItem onClick={handleOpen} >
         <IconButton aria-label="show new notifications" color="inherit">
         <InfoIcon htmlColor='midnightblue' />
@@ -82,6 +81,7 @@ export default function AboutModal(props) {
           <div className={classes.paper}>
           <h4 className={classes.close} onClick={handleClose}>X</h4>
             <h2 id="transition-modal-title">About this Project</h2>
+            <p>Please note that this is 100% designed for mobile.  I hope to eventually make it as clean as possible.  This means that viewing this on a desktop (or labtop) may not be ideal; however, if you are using a labtop, you can right click the browser, choose "inspect" and change the size of the screen to reflect a mobile device by clicking the little screen icon at the top of your inspect.</p>
             <p>This was built for two reasons:  As a fun challenge for myself in development, and to maybe have a quick tool that I can use when playing Tiny Towns solo variant.</p>
             <p>I will note that I am not associated with AEG and would like to thank them and the design team for producing this fun game!</p>
             <p>The purpose of this page is only to aide and is, by no means, meant to replace the fun of flipping cards.  Use this to have fun!</p>
@@ -95,7 +95,10 @@ export default function AboutModal(props) {
 
             <h3>What I'd like to Include:</h3>
             <p>Eventually I hope to include anything that involves the available expansions.</p>
-            <div className={classes.credits}>
+
+              <OnLoadModal />
+
+              <div className={classes.credits}>
               <Link className={classes.root}
               href="https://github.com/coderwine/tinyTownSoloDeck"
               target="_blank"

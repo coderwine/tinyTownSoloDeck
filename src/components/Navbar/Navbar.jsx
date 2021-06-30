@@ -1,30 +1,20 @@
 import { useState, useEffect } from 'react';
 import '../../styles/navbar.css'
-import { fade, makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import RulesModal from '../Modals/RulesModal';
 import AboutModal from '../Modals/AboutModal';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-// import Typography from '@material-ui/core/Typography';
-// import InputBase from '@material-ui/core/InputBase';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import Divider from '@material-ui/core/Divider';
-// import MenuIcon from '@material-ui/icons/Menu';
-// import SearchIcon from '@material-ui/icons/Search';
-// import AccountCircle from '@material-ui/icons/AccountCircle';
-// import MailIcon from '@material-ui/icons/Mail';
-// import NotificationsIcon from '@material-ui/icons/Notifications';
 import StopIcon from '@material-ui/icons/Stop';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import MenuBookSharpIcon from '@material-ui/icons/MenuBookSharp';
 import InfoIcon from '@material-ui/icons/Info';
 import RotateLeftIcon from '@material-ui/icons/RotateLeft';
-// import { SwitchCameraSharp } from '@material-ui/icons';
-// import { green } from '@material-ui/core/colors';
-// import { Palette } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -86,7 +76,6 @@ export default function Navbar(props) {
 
     //Setting State Counts: 
     const count = (res) => {
-        // console.log(res);
         switch(true) {
             case res === 'wood':
                 setWood(wheat + 1);

@@ -19,9 +19,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
-    // padding: theme.spacing(4, 4, 6),
-    // padding: theme.spacing(3),
-    padding: '10em 1em 1em 1em'
+    padding: '.25rem 1rem 1rem 1rem',
+    position: 'absolute',
+    top: '0',
   },
   btn: {
     position: 'static',
