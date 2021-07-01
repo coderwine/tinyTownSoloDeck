@@ -24,7 +24,7 @@ function App() {
   const [discard, setDiscard] = useState(0);
   const [lastPick, setLastPick] = useState('');
   const [version, setVersion] = useState('v.1.0.0');
-  const [start, setStart] = useState(true);
+  const [start, setStart] = useState(false);
 
   const appProps = {
     deckState: {
