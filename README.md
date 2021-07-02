@@ -18,6 +18,7 @@ Current build only utilizes the base game.
 - 6/22: About Modal completed.  Formspree connected.  Site Manual updated.  Data flow completed.  ContactForm completed.  OnLoadModal shell created.
 - 6/23: OnLoadModal created.  How-To-Use information detailed.  Fixed modal bugs.  Obtained Strip API Key and linked accounts.  Trying to set up API to function as needed.
 - 6/30: Deployed to Firebase.  Included a Paypal donation button.  Clean up of files.
+- 7/2:  Started building the Original Deck spread.  Altered the button to feed naming conventions and setting up to handle functions.
 
 **Technology Used**
 - React
