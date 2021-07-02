@@ -40,6 +40,8 @@ Users will also be able to reset the complete deck, badge count, last picked via
 - **Deck**
   - This component displays what the current spread is available or "deal" button.  
   - v1+ may incorporate a way to alternate how the deck is dealt.  
+  - **Original**
+    - Base spread of the deck.  This component is meant to shuffle the base deck, spread the top three, when one is selected, it is to be put back at the bottom of the deck to continue cycling through.
   - **Spread**
     - This component handles the bulk of the logic to determine the random cards to be dealt from the deck, checks against the main deck values to determine if it needs to be "reshuffled" and provides the details as to what the user selects for other components.
     - **SortButton**
