@@ -59,8 +59,8 @@ This is also meant to track the last point of when upkeep was handled.
 
 Index   | Date    | Version | Detail        | Status    | Notes
 ---     | ---     |    ---  |  ---          |   ---     |  ---  
-001     | 6.21.21 | 0.01.00 | Unclear Notes |   WIP     | Created Maint Log      
-        |         |         |               |           |        
+001     | 6.21.21 | 0.01.00 | Unclear Notes |   Done    | Created Maint Log      
+        | 8.18.21 | 0.01.1  | Main Deck Pull|   WIP     |        
 
 
 ## Patch Notes:
@@ -83,6 +83,10 @@ Noted list of bugs and the current status.
   - About Modal
     - Padding-Top is off on larger screens.
       - Status: Fixed - 6/23
+### 8.18.21
+  - Deck pull
+    - Need to incorpoarte original deck pull.
+    - Need to remove "Original" button from 3-card variant.
 
 ## Developer Notes:
 This sections is mainly for general notes and resources to help with material (how-to resources) and practice build structure.

@@ -40,6 +40,7 @@ const Spread = props => {
     const deckLength = props.app.deckState.deck.length;
     let discardCount = props.app.discard;
     let value = discardCount.discard;
+    const btnName = '3 Card Variant'
     const classes = useStyles();
 
     const selectedCard = (resource) => {
@@ -73,7 +74,7 @@ const Spread = props => {
     const displaySpread = () => {
         if(spread.spread.length === 0 && deckLength !== 0){
             return (
-                <SortButton deal={thisDeal} />
+                <SortButton btnName={btnName} deal={thisDeal} />
             )
         } else {
 
@@ -104,7 +105,7 @@ const Spread = props => {
 
     return(
         <>
-        {displaySpread()}
+            {displaySpread()}
         </>
     )
 }

@@ -30,7 +30,7 @@ export default function ShuffleButton(props) {
             <Button className={classes.root} 
                 size="large"
                 variant="contained"
-                onClick={props.deal} >Deal</Button>
+                onClick={props.deal} >{props.btnName}</Button>
         </div>
     )
 }

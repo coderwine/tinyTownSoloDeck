@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import '@fontsource/roboto';
 import './App.css';
 
@@ -18,8 +18,12 @@ function App() {
     'wheat','wheat','wheat',
   ];
 
+  let testDeck = 
+  [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+
   const [deck, setDeck] = useState(baseDeck);
   const [spread, setSpread] = useState([]);
+  const [baseSpread, setBaseSpread] = useState([]);
 
   const [discard, setDiscard] = useState(0);
   const [lastPick, setLastPick] = useState('');
@@ -43,7 +47,12 @@ function App() {
       spread: spread,
       setSpread: setSpread
     },
+    baseSpread: {
+      baseSpread: baseSpread,
+      setBaseSpread: setBaseSpread
+    },
     baseDeck: baseDeck,
+    testDeck: testDeck
   }
 
   const resetGame = () => {
