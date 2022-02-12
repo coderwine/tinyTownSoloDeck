@@ -35,7 +35,6 @@ const useStyles = makeStyles({
 });
 
 const Spread = props => {
-
     const spread = props.app.spread;
     const deckLength = props.app.deckState.deck.length;
     let discardCount = props.app.discard;
